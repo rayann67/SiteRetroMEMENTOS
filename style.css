@@ -1,0 +1,344 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+}
+body {
+    font-family: 'Anton', sans-serif; /* Police similaire à Agency FB */
+}
+
+/* Bande Supérieure */
+.bande-header {
+    background-color: rgb(48, 63, 91);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    font-size: 2rem;
+}
+.bande-header .logo img {
+    height: 50px;
+    margin-right: 40px;
+}
+
+/* Menu Burger Centré */
+header {
+    background-color: rgb(48, 63, 91);
+    padding: 0px 0;
+    text-align: center;
+}
+.menu-container {
+    display: inline-block;
+    background-color: rgb(255, 214, 10);
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+.menu-burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.menu-burger span {
+    background-color:  #000;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+}
+nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 8px 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+nav a img {
+    margin-right: 10px;
+    height: 20px;
+}
+nav .submenu {
+    display: none;
+    padding-left: 20px;
+}
+nav .has-submenu:hover .submenu {
+    display: block;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Menu Actif */
+.active {
+    display: flex;
+}
+
+/* Bannière Image */
+.banniere-image {
+    background: url('file:///C:/Users/gorut/OneDrive/Bureau/html/assets/img/vyxt%20(1).png') no-repeat center/cover;
+    height: 210px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .menu-burger {
+        display: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav a {
+        margin: 0 15px;
+    }
+}
+.Main {
+background-color: rgb(243, 221, 203);
+font-size: 1.2rem;
+width:100%;
+height:100%;
+text-align: center;
+justify-content: space-between;
+    align-items: center;
+    
+}
+.ContainerAccueil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.text-column {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    border-style: solid;
+}
+
+    .image-container2 {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: 60%; 
+    margin: 100 auto; /* Centrer la div sur la page */
+    margin-right: auto;
+    max-width: 600px; /* Taille maximale pour éviter qu'elles ne soient trop grandes */
+    height: 500px; /* Conserver le ratio de l'image */
+  }
+  
+ 
+/* Conteneur principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 38px;
+
+}
+
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    font-size: 38px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Article en vedette */
+.featured-article {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.featured-image {
+    position: relative;
+    flex: 1 1 40%;
+}
+
+.featured-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.logo-placeholder {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.logo-placeholder img {
+    width: 30px;
+    height: 30px;
+}
+
+.featured-details {
+    flex: 1 1 60%;
+}
+
+.featured-details h2 {
+    font-size: 36px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.featured-details .product-price {
+    font-size: 14px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.featured-details .product-link {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.featured-details .product-link:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Grille des autres articles */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.product-item {
+    text-align: center;
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 30%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.product-name {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 13px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.product-link {
+    text-decoration: none;
+    font-size: 13px;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.product-link:hover {
+    color: #0056b3;
+}
+
+    
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    text-align: center;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.footer-logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-height: 50px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+
+
+
+.legal {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+
+
+
+
+
